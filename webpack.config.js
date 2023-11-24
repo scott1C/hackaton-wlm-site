@@ -24,7 +24,7 @@ module.exports = ({ development }) => ({
   mode: development ? 'development' : 'production',
   devtool: development ? 'inline-source-map' : false,
   entry: {
-    main: './src/index.tsx',
+    main: './src/index.jsx',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -35,7 +35,12 @@ module.exports = ({ development }) => ({
     rules: [
       {
         test: /\.[tj]sx?$/,
-        use: 'ts-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
         exclude: /node_modules/,
       },
       {
