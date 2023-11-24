@@ -1,0 +1,32 @@
+.footer {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 150px;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__link {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
