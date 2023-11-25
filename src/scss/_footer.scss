@@ -1,35 +1,38 @@
 .footer {
-    margin-top: 10px;
+	margin-top: 10px;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__info {
-        max-width: 150px;
-    }
+	&__info {
+		display: flex;
+		gap: 20px;
+		max-width: 250px;
+		text-align: center;
+	}
 
-    &__logo {
-        display: block;
-        margin-bottom: 10px;
-    }
+	&__logo {
+		display: block;
+		margin-bottom: 10px;
+	}
 
-    &__links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
 
-    &__link {
-        font-family: "Inter", sans-serif;
-        font-size: 15px;
-        font-weight: 600;
-        color: #000;
+	&__link {
+		font-family: "Inter", sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		color: #000;
 
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
