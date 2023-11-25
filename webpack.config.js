@@ -14,7 +14,6 @@ const devServer = isDev => !isDev ? {} : {
     },
     hot: true,
     port: 3000,
-
     // contentBase: path.join(__dirname, 'public'),
   }
 };
@@ -35,14 +34,14 @@ module.exports = ({ development }) => ({
   module: {
     rules: [
       {
-        test: /\.[tj]sx?$/,
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
-        exclude: /node_modules/,
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
@@ -64,6 +63,12 @@ module.exports = ({ development }) => ({
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    fallback: {
+      "path": require.resolve("path-browserify"),
+      "fs": require.resolve("browserify-fs"),
+      "stream": require.resolve("stream-browserify"),
+      "util": require.resolve("util")
+    }
   },
   plugins: [
     ...esLintPlugin(development),
@@ -81,4 +86,5 @@ module.exports = ({ development }) => ({
     // }),
   ],
   ...devServer(development),
+  target: 'browserslist',
 });
