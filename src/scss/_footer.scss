@@ -7,19 +7,21 @@
     }
 
     &__info {
-        max-width: 150px;
+        display: flex;
+        gap: 20px;
+        max-width: 250px;
+        text-align: center;
     }
 
     &__logo {
         display: block;
-        margin: 0 20px 10px 0;
+        margin-bottom: 10px;
     }
 
     &__links {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         gap: 20px;
     }
 
@@ -31,26 +33,6 @@
 
         &:hover {
             text-decoration: underline;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .footer {
-        &__rights {
-            font-size: 14px;
-        }
-
-        &__link {
-            font-size: 13px;
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .footer {
-        &__link {
-            font-size: 12px;
         }
     }
 }
