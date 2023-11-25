@@ -7,10 +7,6 @@ const columns = [
 	{ field: "mother", headerName: "Mother", width: 150 },
 	{ field: "father", headerName: "Father", width: 110 },
 	{ field: "sex", headerName: "Sex", width: 160 },
-	{ field: "welfare", headerName: "Welfare", width: 160 },
-	{ field: "smoking", headerName: "Smoking", width: 160 },
-	{ field: "drugs", headerName: "Drugs", width: 160 },
-	{ field: "drinking", headerName: "Drinking", width: 160 },
 	{ field: "result", headerName: "Result", width: 160 },
 ];
 
