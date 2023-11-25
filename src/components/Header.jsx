@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header className='header'>
             <div className='header__container container'>
-                <a className='header__logo logo' href='#'>Logo</a>
+                <Link className='header__logo logo' to='/'>Logo</Link>
                 <div className='header__links'>
                     <a className='header__link header__link--1' href='#'>Model 1</a>
                     <a className='header__link header__link--2' href='#'>Model 2</a>

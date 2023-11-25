@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container container">
                 <div className="footer__info">
-                    <a className="footer__logo logo" href="#">Logo</a>
+                    <Link className="footer__logo logo" to='/'>Logo</Link>
                     <p className="footer__rights">2023 © All rights are reserved</p>
                 </div>
                 <div className="footer__links">

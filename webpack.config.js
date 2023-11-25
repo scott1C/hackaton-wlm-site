@@ -14,6 +14,7 @@ const devServer = isDev => !isDev ? {} : {
     },
     hot: true,
     port: 3000,
+
     // contentBase: path.join(__dirname, 'public'),
   }
 };
