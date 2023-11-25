@@ -22,3 +22,19 @@
         padding-right: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        &__link {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__link {
+            font-size: 12px;
+        }
+    }
+}

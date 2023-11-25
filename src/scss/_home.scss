@@ -20,3 +20,23 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 768px) {
+    .home {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__button {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .home {
+        &__title {
+            font-size: 20px;
+        }
+    }
+}
