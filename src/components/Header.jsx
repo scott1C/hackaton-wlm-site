@@ -7,7 +7,7 @@ const Header = () => {
 			<header className="header">
 				<div className="header__container container">
 					<Link className="header__logo logo" to="/">
-						Logo
+						WBL
 					</Link>
 					<div className="header__links">
 						<Link className="header__link header__link--1" to="/model1">

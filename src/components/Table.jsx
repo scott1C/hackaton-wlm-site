@@ -86,7 +86,6 @@ const DataGridDemo = () => {
 		<div style={{ display: "flex", height: 400, gap: "50px" }}>
 			<div
 				style={{
-					marginLeft: "-100px",
 					flexGrow: 1,
 					width: "70%",
 					marginBottom: "10px",

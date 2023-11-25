@@ -7,7 +7,7 @@ const Footer = () => {
 			<div className="footer__container container">
 				<div className="footer__info">
 					<Link className="footer__logo logo" to="/">
-						Logo
+						WBL
 					</Link>
 					<p className="footer__rights">2023 © All rights are reserved</p>
 				</div>

@@ -52,15 +52,15 @@ function MyForm() {
 	return (
 		<div style={containerStyle}>
 			<form onSubmit={handleSubmit} style={formStyle}>
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px", display: "flex", gap: "10px" }}>
 					Age:
 					<input
 						type="text"
 						value={additionalField}
 						onChange={(e) => setAdditionalField(e.target.value)}
-					/>
+						style={{ paddingBlock: "0", paddingInline: "0", borderColor: "0", borderWidth: "0", borderRadius: "5px", outline: "none" }} />
 				</label>
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px" }}>
 					Gender
 					<select
 						value={dropdown1}
@@ -71,7 +71,7 @@ function MyForm() {
 						<option value="Female">Female</option>
 					</select>
 				</label>
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px" }}>
 					Does child has mother?
 					<input
 						type="checkbox"
@@ -79,7 +79,7 @@ function MyForm() {
 						onChange={(e) => setCheckbox1(e.target.checked)}
 					/>
 				</label>
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px" }}>
 					Does child has Father?
 					<input
 						type="checkbox"
@@ -87,7 +87,7 @@ function MyForm() {
 						onChange={(e) => setCheckbox2(e.target.checked)}
 					/>
 				</label>
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px" }}>
 					Does any of parents smokes?
 					<input
 						type="checkbox"
@@ -95,7 +95,7 @@ function MyForm() {
 						onChange={(e) => setCheckbox3(e.target.checked)}
 					/>
 				</label>
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px" }}>
 					Does any of parents drinks spirits?
 					<input
 						type="checkbox"
@@ -104,7 +104,7 @@ function MyForm() {
 					/>
 				</label>
 
-				<label style={{ marginBottom: "5px" }}>
+				<label style={{ marginBottom: "10px" }}>
 					Does any of parents do drugs?
 					<input
 						type="checkbox"
@@ -113,8 +113,8 @@ function MyForm() {
 					/>
 				</label>
 
-				<label style={{ marginBottom: "5px" }}>
-					welfare
+				<label style={{ marginBottom: "10px" }}>
+					Welfare
 					<select
 						value={dropdown2}
 						onChange={(e) => setDropdown2(e.target.value)}
